@@ -10,7 +10,7 @@ message, but your team still incurs the cost of calling the provider’s API. To
 costs, your team needs an internal system that ensures these limits are respected before an
 SMS is sent.
 
-Your Task
+**Your Task**
 Your task is to create a microservice in .NET Core (C#) that acts as a gatekeeper, deciding
 whether a message can be sent from a given business phone number before calling the
 external provider. This microservice will be called from various applications and services across
@@ -25,7 +25,8 @@ per second.
 You need to ensure that your microservice respects these limits in real-time. If either limit is
 exceeded, the service should indicate that the message cannot be sent, avoiding the
 unnecessary API call.
-Performance Expectation
+
+**Performance Expectation**
 The microservice will need to handle a high volume of calls from different applications across
 your system. Your solution should efficiently manage these requests while ensuring it performs
 reliably under load and respects the imposed limits.
@@ -34,13 +35,21 @@ In addition to managing these limits, your solution should also handle resource 
 ● Ensure that resources (e.g., tracking for specific business phone numbers) are not kept
 indefinitely for numbers that are no longer active or haven't been used for a period of
 time.
-Deliverables
+
+**Deliverables**
 ● A functioning .NET Core (C#) microservice that provides a way to check whether a
 message can be sent without exceeding the provider’s limits.
 ● Tests that demonstrate how the service behaves under various conditions, including
 situations where limits are approached or exceeded.
-Extra (Bonus Points)
+**Extra (Bonus Points)**
+
 ● Web Interface (Angular or any javascript framework) for monitoring the service
 ○ Two sections - per account and per number
 ○ Should show how many messages/second are being processed
 ○ Filtering per number and date/time range
+
+**Backend is located under**
+SmsRateLimiterBackend
+**Frontend code is located under**
+SmsRateLimiterFrontEnd
+
