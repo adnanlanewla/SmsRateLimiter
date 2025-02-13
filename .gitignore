@@ -8,4 +8,5 @@ SmsRateLimiterBackend/SmsRateLimiter/SmsRateLimiter/.vs
 SmsRateLimiterBackend/SmsRateLimiter/SmsRateLimiter/bin
 SmsRateLimiterBackend/SmsRateLimiter/SmsRateLimiter/obj
 SmsRateLimiterBackend/SmsRateLimiter/SmsRateLimiter/SmsRateLimiter.sln.DotSettings.user
+SmsRateLimiterFrontEnd/node_modules
 *.user
